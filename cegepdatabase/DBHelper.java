@@ -60,6 +60,7 @@ public class DBHelper {
         {
             db.execSQL(DATABASE_CEGEPCREATE);
             db.execSQL(DATABASE_FRIENDCREATE);
+
         }
         @Override
         public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion)
@@ -85,12 +86,12 @@ public class DBHelper {
     //CEGEP
 
     //---insert a contact into the database---
-    public long insertCegepContact(String name, String city)
+    public long insertCegepContact(String cegep_name, String city)
     {
         ContentValues initialValues = new ContentValues();
-        initialValues.put(KEY_CEGEPNAME, name);
+        initialValues.put(KEY_CEGEPNAME, cegep_name);
         initialValues.put(KEY_CITY, city);
-        return db.insert(CEGEP_TABLE, null, initialValues);
+        return db.insert("cegep", null, initialValues);
     }
     //---deletes a particular contact---
     public boolean deleteCegepContact(long rowId)
@@ -100,7 +101,7 @@ public class DBHelper {
     //---retrieves all the contacts---
     public Cursor getAllCegepContacts()
     {
-        return db.query(CEGEP_TABLE, new String[] {KEY_CEGEPID, KEY_NAME,
+        return db.query("cegep", new String[] {KEY_CEGEPID, KEY_CEGEPNAME,
                 KEY_CITY}, null, null, null, null, null);
     }
     //---retrieves a particular contact---
@@ -108,7 +109,7 @@ public class DBHelper {
     {
         Cursor mCursor =
                 db.query(true, CEGEP_TABLE, new String[] {KEY_CEGEPID,
-                        KEY_NAME, KEY_CITY}, KEY_CEGEPID + "=" + rowId, null,
+                        KEY_CEGEPNAME, KEY_CITY}, KEY_CEGEPID + "=" + rowId, null,
                         null, null, null, null);
         if (mCursor != null) {
             mCursor.moveToFirst();
@@ -119,7 +120,7 @@ public class DBHelper {
     public boolean updateCegepContact(long rowId, String name, String city)
     {
         ContentValues args = new ContentValues();
-        args.put(KEY_NAME, name);
+        args.put(KEY_CEGEPNAME, name);
         args.put(KEY_CITY, city);
         return db.update(CEGEP_TABLE, args, KEY_CEGEPID + "=" + rowId, null) > 0;
     }
