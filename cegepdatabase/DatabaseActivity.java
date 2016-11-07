@@ -1,38 +1,66 @@
 package com.example.cstuser.cegepdatabase;
 
+import android.app.Activity;
+import android.database.Cursor;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
+
+import java.sql.SQLException;
 
 
-public class DatabaseActivity extends ActionBarActivity {
+public class DatabaseActivity extends Activity {
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_database);
-    }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_database, menu);
-        return true;
-    }
+        DBHelper db = new DBHelper(this);
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+//        try {
+//            db.open();
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//        }
+//
+//        long id = db.insertCegepContact("Vanier", "Saint-Laurent");
+//        db.close();
+//        Toast.makeText(this, "inserting", Toast.LENGTH_LONG).show();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        try {
+            db.open();
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
+        Cursor c = db.getAllCegepContacts();
+        if(c.moveToFirst()){
+            do{
+                DisplayContact(c);
+            }while (c.moveToNext());
+        }
+        db.close();
 
-        return super.onOptionsItemSelected(item);
+//        try {
+//            db.open();
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//        }
+//        db.deleteCegepContact(2);
+//        db.deleteCegepContact(3);
+//        db.deleteCegepContact(4);
+//        db.close();
+    }
+
+    public void DisplayContact(Cursor c)
+    {
+        Toast.makeText(this,
+                "id: " + c.getString(0) + "\n" +
+                "Cegep: " + c.getString(1) + "\n" +
+                "City: " + c.getString(2),
+                Toast.LENGTH_LONG).show();
     }
 }
+
+
