@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:gravity="center_vertical">
 
     <LinearLayout
         android:orientation="horizontal"
@@ -9,16 +10,22 @@
         android:layout_height="wrap_content" >
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:text="Manual"
-            android:id="@+id/manual" />
+            android:id="@+id/manual"
+            android:padding="10dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight="1" />
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:text="Automatic"
-            android:id="@+id/automatic" />
+            android:id="@+id/automatic"
+            android:padding="10dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight="1" />
     </LinearLayout>
 
     <LinearLayout
@@ -27,16 +34,22 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:text="Enter New Friend"
-            android:id="@+id/enterFriend" />
+            android:id="@+id/enterFriend"
+            android:padding="10dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight="1" />
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:text="Enter New Cegep"
-            android:id="@+id/enterCegep" />
+            android:id="@+id/enterCegep"
+            android:padding="10dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight="1" />
     </LinearLayout>
 
     <LinearLayout
@@ -45,16 +58,22 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:text="Edit Friend"
-            android:id="@+id/editFriend" />
+            android:id="@+id/editFriend"
+            android:padding="10dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight="1" />
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:text="Edit Cegep"
-            android:id="@+id/editCegep" />
+            android:id="@+id/editCegep"
+            android:padding="10dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight="1" />
     </LinearLayout>
 
     <LinearLayout
@@ -63,16 +82,22 @@
         android:layout_height="wrap_content" >
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:text="Delete Friend"
-            android:id="@+id/deleteFriend" />
+            android:id="@+id/deleteFriend"
+            android:padding="10dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight="1" />
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:text="Delete Cegep"
-            android:id="@+id/deleteCegep" />
+            android:id="@+id/deleteCegep"
+            android:padding="10dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight="1" />
     </LinearLayout>
 
     <LinearLayout
@@ -81,29 +106,29 @@
         android:layout_height="wrap_content" >
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:text="Search Friend"
-            android:id="@+id/searchFriend" />
+            android:id="@+id/searchFriend"
+            android:padding="10dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight="1" />
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:text="Search Cegep"
-            android:id="@+id/searchCegep" />
+            android:id="@+id/searchCegep"
+            android:padding="10dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight="1" />
     </LinearLayout>
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Return to Main Menu"
-            android:id="@+id/button12" />
-
-    </LinearLayout>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Return to Main Menu"
+        android:id="@+id/button12"
+        android:layout_gravity="center_horizontal" />
 
 </LinearLayout>
