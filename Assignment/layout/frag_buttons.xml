@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Previous"
+            android:id="@+id/previous"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:id="@+id/next" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal">
+
+        <Button
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:text="Manual"
+            android:id="@+id/manual"
+            android:gravity="center_vertical|center_horizontal" />
+
+        <Button
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:text="Automatic"
+            android:id="@+id/automatic"
+            android:gravity="center_vertical|center_horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal">
+
+        <Button
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:text="Enter New Friend"
+            android:id="@+id/enterFriend"
+            android:gravity="center_vertical|center_horizontal" />
+
+        <Button
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:text="Enter New Cegep"
+            android:id="@+id/enterCegep"
+            android:gravity="center_vertical|center_horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal">
+
+        <Button
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:text="Edit Friend"
+            android:id="@+id/editFriend"
+            android:gravity="center_vertical|center_horizontal" />
+
+        <Button
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:text="Edit Cegep"
+            android:id="@+id/editCegep"
+            android:gravity="center_vertical|center_horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal">
+
+        <Button
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:text="Delete Friend"
+            android:id="@+id/deleteFriend"
+            android:gravity="center_vertical|center_horizontal" />
+
+        <Button
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:text="Delete Cegep"
+            android:id="@+id/deleteCegep"
+            android:gravity="center_vertical|center_horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal">
+
+        <Button
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:text="Search Friend"
+            android:id="@+id/searchFriend"
+            android:gravity="center_vertical|center_horizontal" />
+
+        <Button
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:text="Search Cegep"
+            android:id="@+id/searchCegep"
+            android:gravity="center_vertical|center_horizontal" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Return to Main Menu"
+        android:id="@+id/done"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
