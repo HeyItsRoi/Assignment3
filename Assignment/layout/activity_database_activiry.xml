@@ -9,7 +9,7 @@
     <fragment
         android:name="com.example.cstuser.databaseactivity.FragPictSound"
         android:id="@+id/fragment1"
-        android:layout_weight="1"
+        android:layout_weight="7.52"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:layout="@layout/frag_pictsound" />
@@ -17,7 +17,7 @@
         android:name="com.example.cstuser.databaseactivity.FragButton"
         android:id="@+id/fragment2"
         android:layout_weight="1"
-        android:layout_width="match_parent"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         tools:layout="@layout/frag_buttons" />
 
