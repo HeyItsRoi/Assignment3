@@ -8,20 +8,31 @@
         android:orientation="horizontal"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_vertical|center_horizontal">
+        android:gravity="center_vertical|center_horizontal"
+        android:weightSum="1">
 
         <Button
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:text="Previous"
             android:id="@+id/previous"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="top|center_horizontal" />
+
+        <ToggleButton
+            android:layout_width="52dp"
+            android:layout_height="wrap_content"
+            android:text="SoundON"
+            android:id="@+id/toggleButton"
+            android:layout_gravity="top|center_horizontal"
+            android:checked="true" />
 
         <Button
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:text="Next"
-            android:id="@+id/next" />
+            android:id="@+id/next"
+            android:layout_gravity="top" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -35,14 +46,16 @@
             android:layout_height="wrap_content"
             android:text="Manual"
             android:id="@+id/manual"
-            android:gravity="center_vertical|center_horizontal" />
+            android:gravity="center_vertical|center_horizontal"
+            android:visibility="gone" />
 
         <Button
             android:layout_width="175dp"
             android:layout_height="wrap_content"
             android:text="Automatic"
             android:id="@+id/automatic"
-            android:gravity="center_vertical|center_horizontal" />
+            android:gravity="center_vertical|center_horizontal"
+            android:visibility="gone" />
     </LinearLayout>
 
     <LinearLayout

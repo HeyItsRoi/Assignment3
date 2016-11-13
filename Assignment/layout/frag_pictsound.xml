@@ -8,7 +8,8 @@
         android:orientation="vertical"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:gravity="center_vertical|center_horizontal">
 
         <ImageView
             android:layout_width="wrap_content"
@@ -16,26 +17,21 @@
             android:id="@+id/friendPic"
             android:layout_gravity="center_horizontal" />
 
-        <ToggleButton
-            android:layout_width="52dp"
-            android:layout_height="wrap_content"
-            android:text="SoundON"
-            android:id="@+id/toggleButton"
-            android:layout_gravity="center_horizontal"
-            android:checked="false" />
-
     </LinearLayout>
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:gravity="center_vertical">
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_gravity="center_vertical">
 
             <TextView
                 android:layout_width="75dp"
@@ -53,7 +49,9 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_gravity="center_vertical">
 
             <TextView
                 android:layout_width="75dp"
@@ -70,7 +68,9 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_gravity="center_vertical">
 
             <TextView
                 android:layout_width="75dp"
@@ -87,7 +87,9 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_gravity="center_vertical">
 
             <TextView
                 android:layout_width="75dp"
