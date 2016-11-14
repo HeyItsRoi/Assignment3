@@ -1,4 +1,4 @@
-package com.example.cstuser.databaseactivity;
+package com.example.lerihan.assignment3;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -25,8 +25,7 @@ public class DatabaseActiviry extends Activity {
         display.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent("com.example.cstuser.databaseactivity.FragmentActivity");
-                startActivity(intent);
+                startActivity(new Intent("com.example.lerihan.assignment3.FragmentActivity"));
             }
         });
 
@@ -34,7 +33,11 @@ public class DatabaseActiviry extends Activity {
         friendDB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent("com.example.cstuser.databaseactivity.FragmentActivity"));
+                Intent intent = new Intent("com.example.lerihan.assignment3.FragmentActivity");
+                //Since additional buttons must be added, the message "friendDB" (the button's id) will be passed
+                //to signal the FragmentActivity activity
+                intent.putExtra("b_id", "friendDB");
+                startActivity(intent);
             }
         });
 
