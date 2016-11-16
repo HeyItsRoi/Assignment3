@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.heyitsroi.databaseactiviry">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/overwatch_app"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".DatabaseActiviry">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FragmentActivity"
+            android:label="Fragment Activity" >
+            <intent-filter>
+                <action android:name="com.example.heyitsroi.databaseactiviry.FragmentActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AddFriend"
+            android:label="Friend Add" >
+            <intent-filter>
+                <action android:name="com.example.heyitsroi.databaseactiviry.AddFriend" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AddCegep"
+            android:label="Cegep Add" >
+            <intent-filter>
+                <action android:name="com.example.heyitsroi.databaseactiviry.AddCegep" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

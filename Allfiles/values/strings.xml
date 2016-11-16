@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">OverDatabase</string>
+    <string name="action_settings">"Settings</string>
+    <string-array name="cegep_name">
+        <item>Dawson College</item>
+        <item>Cégep Gerald-Godin</item>
+        <item>Jean Abbott College</item>
+        <item>Marianopolis College</item>
+        <item>Collège Montmorency</item>
+        <item>Vanier College</item>
+        <item>Collège Ahuntsic</item>
+        <item>Collège de Bois-de-Boulogne</item>
+        <item>Cégep du Vieux Montréal</item>
+        <item>Cégep Marie-Victorin</item>
+        <item>Collège Lionel-Groulx</item>
+        <item>Cégep de Sherbrooke</item>
+        <item>Cégep Édouard-Montpetit</item>
+        <item>Collège de Maisonneuve</item>
+    </string-array>
+</resources>
